@@ -1,28 +1,20 @@
-﻿
-nguoichoi = input("Người chơi: ")
-nguoimay = input("Người máy: ")
-a = "kéo"
-b = "búa"
-c = "bao"
+@author: Nguyễn Hoài Khánh Trang 237009171
 
+import random
+luachon=["kéo", "búa", "bao"]
+
+nguoichoi = input("Người chơi chọn: ")
+nguoimay = random.choice(luachon)
+
+print("Máy tính chọn:", nguoimay)
 if nguoichoi == nguoimay:
     print("Hòa")
-if nguoichoi == a and nguoimay == b:
-        print("Kết quả máy thắng")
-elif nguoichoi == a and nguoimay == c:
-        print("Kết quả người chơi thắng")
-if nguoichoi == b and nguoimay == a:
-        print("Kết quả người chơi thắng")
-elif nguoichoi == b and nguoimay == c:
-        print("Kết quả máy thắng")
-if nguoichoi == c and nguoimay == a:
-        print("Kết quả máy thắng")
-elif nguoichoi == c and nguoimay == b:
-        print("Kết quả người chơi thắng")
-
- 
-    
-    
-
-    
+elif nguoichoi == "kéo" and nguoimay == "bao":
+    print("Kết quả: Người chơi thắng")
+elif nguoichoi == "búa" and nguoimay == "kéo":
+    print("Kết quả: Người chơi thắng")
+elif nguoichoi == "bao" and nguoimay == "búa":
+    print("Kết quả: Người chơi thắng")
+else:
+    print("Kết quả: Người chơi thua")
 
