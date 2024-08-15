@@ -1,5 +1,8 @@
-@author: Nguyễn Hoài Khánh Trang 237009171
+"""
 
+
+@author:Nguyễn Hoài Khánh Trang 23709171
+"""
 import random
 luachon=["kéo", "búa", "bao"]
 
